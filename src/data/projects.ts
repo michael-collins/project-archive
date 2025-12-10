@@ -22,6 +22,16 @@ export const projectCategories: ProjectCategory[] = [
         name: "Portfolio",
         url: "https://michaelcollins.xyz",
       },
+      {
+        id: "dmd-program",
+        name: "DMD Program",
+        url: "https://dmd.psu.edu",
+      },
+      {
+        id: "dmd-exhibitions",
+        name: "DMD Exhibitions",
+        url: "https://sites.psu.edu/dmdexhibitions/",
+      },
     ],
   },
   {
@@ -60,8 +70,18 @@ export const projectCategories: ProjectCategory[] = [
     ],
   },
   {
-    category: "Curriculum",
+    category: "Curriculum & Pedagogy",
     projects: [
+      {
+        id: "aiul",
+        name: "AIUL",
+        url: "https://dmd-program.github.io/aiul/",
+      },
+      {
+        id: "workflow-chart",
+        name: "Workflow Chart",
+        url: "michaelcollins.xyz/workflow-chart/",
+      },
       {
         id: "3d-studio-legacy",
         name: "3D Studio (legacy)",
