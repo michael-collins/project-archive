@@ -22,16 +22,6 @@ export const projectCategories: ProjectCategory[] = [
         name: "Portfolio",
         url: "https://michaelcollins.xyz",
       },
-      {
-        id: "dmd-program",
-        name: "DMD Program",
-        url: "https://dmd.psu.edu",
-      },
-      {
-        id: "dmd-exhibitions",
-        name: "DMD Exhibitions",
-        url: "https://sites.psu.edu/dmdexhibitions/",
-      },
     ],
   },
   {
@@ -106,6 +96,11 @@ export const projectCategories: ProjectCategory[] = [
         id: "dmd-program",
         name: "DMD Program",
         url: "https://dmd.psu.edu",
+      },
+      {
+        id: "dmd-exhibitions",
+        name: "DMD Exhibitions",
+        url: "https://sites.psu.edu/dmdexhibitions/",
       },
     ],
   },
