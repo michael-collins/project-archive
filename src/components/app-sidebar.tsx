@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { FolderGit2, MoreHorizontal } from "lucide-react"
+import { MoreHorizontal } from "lucide-react"
 
 import {
   Sidebar,
