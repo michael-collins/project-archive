@@ -44,9 +44,11 @@ export function AppSidebar({
       <SidebarContent className="px-2">
         {projectCategories.map((category) => (
           <React.Fragment key={category.category}>
-            <div className="px-2 py-2 text-xs font-semibold text-sidebar-foreground/70">
-              {category.category}
-            </div>
+            {category.showHeading !== false && (
+              <div className="px-2 py-2 text-xs font-semibold text-sidebar-foreground/70">
+                {category.category}
+              </div>
+            )}
             <SidebarMenu>
               {category.projects.map((project) => (
                 <SidebarMenuItem key={project.id}>

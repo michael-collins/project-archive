@@ -9,11 +9,13 @@ export interface Project {
 export interface ProjectCategory {
   category: string
   projects: Project[]
+  showHeading?: boolean
 }
 
 export const projectCategories: ProjectCategory[] = [
   {
     category: "Featured",
+    showHeading: false,
     projects: [
       {
         id: "portfolio",
