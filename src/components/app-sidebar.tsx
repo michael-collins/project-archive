@@ -26,7 +26,7 @@ export function AppSidebar({
   ...props
 }: AppSidebarProps) {
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="offcanvas" {...props}>
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
@@ -41,15 +41,13 @@ export function AppSidebar({
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SidebarContent>
-        <SidebarMenu>
-          {projectCategories.map((category) => (
-            <React.Fragment key={category.category}>
-              <SidebarMenuItem>
-                <div className="px-2 py-2 text-xs font-semibold text-sidebar-foreground/70">
-                  {category.category}
-                </div>
-              </SidebarMenuItem>
+      <SidebarContent className="px-2">
+        {projectCategories.map((category) => (
+          <React.Fragment key={category.category}>
+            <div className="px-2 py-2 text-xs font-semibold text-sidebar-foreground/70">
+              {category.category}
+            </div>
+            <SidebarMenu>
               {category.projects.map((project) => (
                 <SidebarMenuItem key={project.id}>
                   <SidebarMenuButton
@@ -57,20 +55,15 @@ export function AppSidebar({
                     onClick={() => !project.inactive && setActiveProject(project)}
                     disabled={project.inactive}
                     tooltip={project.name}
-                    className={project.inactive ? "opacity-50 cursor-not-allowed" : ""}
+                    className={`${activeProject?.id === project.id ? "!bg-black !text-white" : ""} ${project.inactive ? "opacity-50 cursor-not-allowed" : ""}`}
                   >
-                    {project.icon ? (
-                      <project.icon className="h-4 w-4" />
-                    ) : (
-                      <FolderGit2 className="h-4 w-4" />
-                    )}
                     <span>{project.name}</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
-            </React.Fragment>
-          ))}
-        </SidebarMenu>
+            </SidebarMenu>
+          </React.Fragment>
+        ))}
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>

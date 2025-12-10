@@ -13,6 +13,16 @@ export interface ProjectCategory {
 
 export const projectCategories: ProjectCategory[] = [
   {
+    category: "Featured",
+    projects: [
+      {
+        id: "portfolio",
+        name: "Portfolio",
+        url: "https://michaelcollins.xyz",
+      },
+    ],
+  },
+  {
     category: "Learning tech",
     projects: [
       {
