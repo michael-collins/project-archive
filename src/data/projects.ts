@@ -80,7 +80,22 @@ export const projectCategories: ProjectCategory[] = [
       {
         id: "workflow-chart",
         name: "Workflow Chart",
-        url: "michaelcollins.xyz/workflow-chart/",
+        url: "https://michaelcollins.xyz/workflow-chart/",
+      },
+      {
+        id: "dmd-100",
+        name: "DMD 100: Digital Multimedia Design Foundations",
+        url: "https://dmd-program.github.io/dmd-100-book/",
+      },
+      {
+        id: "dmd-300",
+        name: "DMD 300: Digital Multimedia Design Studio",
+        url: "https://dmd-program.github.io/dmd-300-master/",
+      },
+      {
+        id: "dmd-400",
+        name: "DMD 400: Digital Multimedia Design Capstone",
+        url: "https://dmd-program.github.io/dmd-400-master/",
       },
       {
         id: "3d-studio-legacy",
